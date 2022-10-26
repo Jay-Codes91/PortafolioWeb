@@ -1,0 +1,25 @@
+@mixin iconos(){
+  width: 128px;
+  height: 128px;
+  transition: all .5s ease-in-out;
+
+  &:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    cursor: pointer;
+}
+}
+
+.cont-tecnologias, .cont-tecnologias__Back-end {
+  @include iconos();
+}
+
+.cont-tecnologias>img, .cont-tecnologias__Back-end>img {
+  max-width: max-content;
+  height: 100%;
+}
+
+

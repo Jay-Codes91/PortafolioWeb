@@ -1,0 +1,38 @@
+@mixin efectoZoom() {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+
+  &:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    cursor: pointer;
+  }
+}
+
+nav {
+  background: #0F2027;
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+
+  ul{
+    li {
+    padding: 0 10px 0 10px;
+    @media screen and (max-width: 380px){
+      padding: 0 5px 0 5px;
+   }
+    @include efectoZoom();
+
+    a {
+      color: #FAFAFA;
+      font-size: 20px;
+    }
+  }
+  
+  }
+}

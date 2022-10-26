@@ -1,0 +1,29 @@
+nav {
+  background: #0F2027;
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+}
+nav ul li {
+  padding: 0 10px 0 10px;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+@media screen and (max-width: 380px) {
+  nav ul li {
+    padding: 0 5px 0 5px;
+  }
+}
+nav ul li:hover {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  cursor: pointer;
+}
+nav ul li a {
+  color: #FAFAFA;
+  font-size: 20px;
+}/*# sourceMappingURL=contacto.component.css.map */

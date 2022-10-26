@@ -1,14 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+declare var $: any;
+declare var AOS: any;
+declare var Swal: any;
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'Portafolio';
+export class AppComponent implements OnInit {
+  title = 'curriculumV2';
 
-  saludo(){
-    alert("Hola");
+  ngOnInit(): void{
+    AOS.init();
+
+    $("#titulo").html("Jquery listo");
+
+  }
+
+
+  msj(){
+    Swal.fire(
+      'Good job!',
+      'You clicked the button!',
+      'success'
+    )
   }
 }
