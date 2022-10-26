@@ -19,6 +19,10 @@ let AppComponent = /*#__PURE__*/(() => {
       this.title = 'Portafolio';
     }
 
+    saludo() {
+      alert("Hola");
+    }
+
   }
 
   AppComponent.ɵfac = function AppComponent_Factory(t) {
@@ -28,12 +32,19 @@ let AppComponent = /*#__PURE__*/(() => {
   AppComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
     type: AppComponent,
     selectors: [["app-root"]],
-    decls: 2,
+    decls: 4,
     vars: 0,
+    consts: [[3, "click"]],
     template: function AppComponent_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h1");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Proyecto de Prueba a github");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "a", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_Template_a_click_3_listener() {
+          return ctx.saludo();
+        });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
     }
