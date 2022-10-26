@@ -32,7 +32,7 @@ let AppComponent = /*#__PURE__*/(() => {
   AppComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
     type: AppComponent,
     selectors: [["app-root"]],
-    decls: 4,
+    decls: 5,
     vars: 0,
     consts: [[3, "click"]],
     template: function AppComponent_Template(rf, ctx) {
@@ -45,6 +45,7 @@ let AppComponent = /*#__PURE__*/(() => {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AppComponent_Template_a_click_3_listener() {
           return ctx.saludo();
         });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Saludo");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
     }
