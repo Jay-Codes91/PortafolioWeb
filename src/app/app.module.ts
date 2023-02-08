@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './Components/header/header.component';
@@ -8,6 +9,7 @@ import { ContactoComponent } from './Components/contacto/contacto.component';
 import { TecnologiasComponent } from './Components/tecnologias/tecnologias.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { PerfilComponent } from './Components/perfil/perfil.component';
+import { FormularioComponent } from './Components/formulario/formulario.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,15 @@ import { PerfilComponent } from './Components/perfil/perfil.component';
     ContactoComponent,
     TecnologiasComponent,
     FooterComponent,
-    PerfilComponent
+    PerfilComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

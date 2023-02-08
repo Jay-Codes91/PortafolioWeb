@@ -1,0 +1,60 @@
+<div class="principal">
+  <h2 class="text-center fw-bold"> <u>Contacto</u></h2>
+
+  <div class="formulario">
+    <form [formGroup]="form" class="row" (submit)="sendEmail($event)">
+      <div class="col-12">
+        <label for="nom" class="form-label">Ingresa tu nombre</label>
+       <input type="text" class="form-control" formControlName="from_name" name="from_name" id="from_name">
+      </div>
+      <div
+            *ngIf="form.controls['from_name']?.invalid && (form.controls['from_name']?.dirty || form.controls['from_name']?.touched)">
+            <span class="text-danger" *ngIf="form.controls['from_name'].errors?.['required']">
+              Ingresa tu correo
+            </span>
+
+            <span class="text-danger" *ngIf="form.controls['from_name'].errors?.['maxlength']">
+                No puede tener más de 20 caracteres
+            </span>
+        </div>
+      <div class="col-12">
+        <label for="com" class="form-label">Mensaje</label>
+        <textarea class="form-control" formControlName="message" name="message" id="message" rows="3"></textarea>
+      </div>
+      <div
+            *ngIf="form.controls['message']?.invalid && (form.controls['message']?.dirty || form.controls['message']?.touched)">
+            <span class="text-danger" *ngIf="form.controls['message'].errors?.['required']">
+              Ingresa tu mensaje
+            </span>
+
+            <span class="text-danger" *ngIf="form.controls['message'].errors?.['maxlength']">
+                No puede exceder de 100 caracteres
+            </span>
+        </div>
+
+      <div class="col-12">
+        <label for="ape" class="form-label">Ingresa tu correo</label>
+        <input type="email" class="form-control" formControlName="email_id" name="email_id" id="email_id">
+      </div>
+      
+      <div
+            *ngIf="form.controls['email_id']?.invalid && (form.controls['email_id']?.dirty || form.controls['email_id']?.touched)">
+            <span class="text-danger" *ngIf="form.controls['email_id'].errors?.['required']">
+              Ingresa tu correo para contactarte
+            </span>
+
+            <span class="text-danger" *ngIf="form.controls['email_id'].errors?.['maxlength']">
+                No puede exceder de 50 caracteres
+            </span>
+
+            <span class="text-danger" *ngIf="form.controls['email_id'].errors?.['email_id']">
+                El formato del correo es inválido
+              </span>
+        </div>
+      <div class="col-12 d-flex justify-content-center mt-3">
+        <button class="btn btn-primary" type="submit" [disabled]="this.form.invalid">Enviar</button>
+      </div>
+
+    </form>
+  </div>
+</div>

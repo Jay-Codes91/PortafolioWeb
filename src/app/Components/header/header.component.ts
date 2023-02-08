@@ -8,7 +8,11 @@ declare var Swal: any;
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  msj: string = '';
+
+  constructor() { 
+    this.msj = 'Elaboro páginas web elegantes y adaptables a todos los dispositivos con las tecnologías de Angular y .Net Core';
+  }
 
   ngOnInit(): void {
     
@@ -22,7 +26,7 @@ export class HeaderComponent implements OnInit {
       title: 'Acerca de mi',
       html: '<p><b>Descripción: </b> Desarrollador web con amplio conocimiento en el Front-end y básico en el Back-end.</p><br>'+
             '<p><b>Experiencia: </b> Proyecto Final de Graduación (2022) - Agenda de Reservas de Espacios de Trabajo para la Escuela de Ciencias Exactas y Naturales de la UNED</p><br>' +
-            '<p><b>Preparación Académica: </b>Bachiller en Ingeniería en Informática - UNED (2022)</p><br>'+
+            '<p><b>Preparación Académica: </b>Bachiller en Ingeniería Informática - UNED (2022)</p><br>'+
             '<p><b>Idiomas: </b> Español (Nativo), Inglés (Intermedio)</p>',
 
       confirmButtonText: 'Aceptar',

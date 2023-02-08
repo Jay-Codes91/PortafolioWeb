@@ -13,7 +13,6 @@
 }
 
 .cont-tecnologias > img, .cont-tecnologias__Back-end > img {
-  max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
   height: 100%;

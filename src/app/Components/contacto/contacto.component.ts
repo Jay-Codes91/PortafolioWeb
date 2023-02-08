@@ -34,7 +34,7 @@ export class ContactoComponent implements OnInit {
     Swal.fire({
       icon: 'info',
       title: 'Email',
-      html: '<i class="fa-solid fa-envelope"></i> yeimaraya91@gmail.com',
+      html: '<i class="fa-solid fa-envelope"></i> yeiko.munoz.a91@gmail.com',
       confirmButtonColor: this.colorBotonesConfirm,
       confirmButtonText: 'Aceptar'
     })
