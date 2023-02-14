@@ -9,7 +9,7 @@ declare var bootstrap: any;
 })
 export class ContactoComponent implements OnInit {
 
-  colorBotonesConfirm: string = '#7986CB';
+  colorBotonesConfirm: string = '#42A5F5';
   constructor() { }
 
   ngOnInit(): void {
