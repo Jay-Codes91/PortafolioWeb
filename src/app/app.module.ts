@@ -10,6 +10,7 @@ import { TecnologiasComponent } from './Components/tecnologias/tecnologias.compo
 import { FooterComponent } from './Components/footer/footer.component';
 import { PerfilComponent } from './Components/perfil/perfil.component';
 import { FormularioComponent } from './Components/formulario/formulario.component';
+import { ProyectosComponent } from './Components/proyectos/proyectos.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormularioComponent } from './Components/formulario/formulario.componen
     TecnologiasComponent,
     FooterComponent,
     PerfilComponent,
-    FormularioComponent
+    FormularioComponent,
+    ProyectosComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
 $negro: #212121;
-
+$Grey: rgb(204, 204, 204);
 #principal{
     margin: 0;
     padding: 0;
@@ -36,3 +36,6 @@ $negro: #212121;
     }
 }
 
+.modal-footer{
+    background-color: $Grey;
+}

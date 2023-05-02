@@ -4,7 +4,7 @@
   <div class="formulario">
     <form [formGroup]="form" class="row" (submit)="sendEmail($event)">
       <div class="col-12">
-        <label for="nom" class="form-label">Ingresa tu nombre</label>
+        <label for="nom" class="form-label fw-bold">Ingresa tu nombre</label>
         <input type="text" class="form-control" formControlName="from_name" name="from_name" id="from_name">
       </div>
       <div
@@ -19,7 +19,7 @@
       </div>
 
       <div class="col-12">
-        <label for="ape" class="form-label">Ingresa tu correo</label>
+        <label for="ape" class="form-label fw-bold">Ingresa tu correo</label>
         <input type="email" class="form-control" formControlName="email_id" name="email_id" id="email_id">
       </div>
 
@@ -39,7 +39,7 @@
       </div>
 
       <div class="col-12">
-        <label for="com" class="form-label">Mensaje</label>
+        <label for="com" class="form-label fw-bold">Mensaje</label>
         <textarea class="form-control" formControlName="message" name="message" id="message" rows="3"></textarea>
       </div>
       <div
@@ -54,7 +54,7 @@
       </div>
 
       <div class="col-12 d-flex justify-content-center mt-3">
-        <button class="btn btn-primary" type="submit" [disabled]="this.form.invalid">Enviar</button>
+        <button class="btnPrimary" type="submit" [disabled]="this.form.invalid">Enviar</button>
       </div>
 
     </form>

@@ -6,11 +6,9 @@
     </a>
 
     <div class="align-self-center me-3">
-      <ul class="nav navItem">
-        <li class="nav-item">
-          <a class="nav-link" href="#" (click)="perfil()" >Acerca de mi</a>
-        </li>
-      </ul>
+      
+       <button class="btnGrey" type="button" data-bs-toggle="modal" data-bs-target="#perfil">Acerca de mi</button>
+        
     </div>
 
   </nav>
@@ -20,3 +18,45 @@
     <p class="text-white animate__animated animate__flipInX">{{msj}}</p>
   </div>
 </header>
+
+<!-- Modal -->
+<div class="modal fade" id="perfil" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Perfil</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+           <img src="assets/Foto Curriculum 2.png" class="img-thumbnail" alt="Foto perfil" width="100" height="100">
+        </div><br>
+        <h4 class="fw-bold"><u>Descripción</u></h4>
+        <p>Desarrollador web con amplios conocimientos en el front end y back end.</p>
+        <p>Puedo construir una aplicación web completa que incluye</p>
+        <ol>
+          <li>Base de datos Sql Server</li>
+          <li>Asp.net Core Web Api</li>
+          <li>Implementación de seguridad con Jason Web Tokens</li>
+          <li>Cifrado de contraseñas</li>
+          <li>Interfaz de usuario desarrollada en angular</li>
+        </ol><br>
+        <h4 class="fw-bold"><u>Experiencia</u></h4>
+        <p>Proyecto Final de Graduación (2022) - Agenda de Reservas de Espacios de Trabajo para la Escuela de Ciencias Exactas y Naturales de la UNED</p>
+        <p>Proyecto Personal: <a href="https://jay-codes91.github.io/Animales/" target="_blank">Proyecto de Especies de Animales</a></p>
+
+        <h4 class="fw-bold"><u>Preparación Académica</u></h4>
+        <p>Bachiller en Ingeniería Informática - UNED (2022)</p>
+
+        <h4 class="fw-bold"><u>Idiomas</u></h4>
+        <p>Español (Nativo), Inglés (Intermedio)</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btnPrimary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
