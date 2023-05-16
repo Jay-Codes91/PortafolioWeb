@@ -9,11 +9,11 @@
       </div>
       <div
         *ngIf="form.controls['from_name']?.invalid && (form.controls['from_name']?.dirty || form.controls['from_name']?.touched)">
-        <span class="text-danger" *ngIf="form.controls['from_name'].errors?.['required']">
+        <span class="text-danger fw-bold" *ngIf="form.controls['from_name'].errors?.['required']">
           Ingresa tu nombre
         </span>
 
-        <span class="text-danger" *ngIf="form.controls['from_name'].errors?.['maxlength']">
+        <span class="text-danger fw-bold" *ngIf="form.controls['from_name'].errors?.['maxlength']">
           No puede tener más de 20 caracteres
         </span>
       </div>
@@ -25,15 +25,15 @@
 
       <div
         *ngIf="form.controls['email_id']?.invalid && (form.controls['email_id']?.dirty || form.controls['email_id']?.touched)">
-        <span class="text-danger" *ngIf="form.controls['email_id'].errors?.['required']">
+        <span class="text-danger fw-bold" *ngIf="form.controls['email_id'].errors?.['required']">
           Ingresa tu correo para contactarte
         </span>
 
-        <span class="text-danger" *ngIf="form.controls['email_id'].errors?.['maxlength']">
+        <span class="text-danger fw-bold" *ngIf="form.controls['email_id'].errors?.['maxlength']">
           No puede exceder de 50 caracteres
         </span>
 
-        <span class="text-danger" *ngIf="form.controls['email_id'].errors?.['email']">
+        <span class="text-danger fw-bold" *ngIf="form.controls['email_id'].errors?.['email']">
           El formato del correo es inválido
         </span>
       </div>
@@ -44,11 +44,11 @@
       </div>
       <div
         *ngIf="form.controls['message']?.invalid && (form.controls['message']?.dirty || form.controls['message']?.touched)">
-        <span class="text-danger" *ngIf="form.controls['message'].errors?.['required']">
+        <span class="text-danger fw-bold" *ngIf="form.controls['message'].errors?.['required']">
           Ingresa tu mensaje
         </span>
 
-        <span class="text-danger" *ngIf="form.controls['message'].errors?.['maxlength']">
+        <span class="text-danger fw-bold" *ngIf="form.controls['message'].errors?.['maxlength']">
           No puede exceder de 100 caracteres
         </span>
       </div>
