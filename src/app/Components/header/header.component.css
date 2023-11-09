@@ -4,7 +4,32 @@
   height: 500px;
   background-image: url("../../../assets/fondo.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 500px;
+  background-position: center;
+}
+@media screen and (max-width: 480px) {
+  #principal {
+    background-size: 30em 500px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #principal {
+    background-size: 40em 500px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #principal {
+    background-size: 50em 500px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  #principal {
+    background-size: 60em 500px;
+  }
+}
+@media screen and (min-width: 1201px) {
+  #principal {
+    background-size: 60em 500px;
+  }
 }
 #principal .titulos {
   max-width: 50%;

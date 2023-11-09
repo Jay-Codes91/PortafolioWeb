@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 declare var $: any;
-declare var AOS: any;
 declare var Swal: any;
 
 @Component({
@@ -13,7 +12,7 @@ export class AppComponent implements OnInit {
   title = 'curriculumV2';
 
   ngOnInit(): void{
-    AOS.init();
+    
 
     $("#titulo").html("Jquery listo");
 

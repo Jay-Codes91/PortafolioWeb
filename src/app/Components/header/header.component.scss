@@ -6,8 +6,27 @@ $negro: #212121;
     height: 500px;
     background-image: url("../../../assets/fondo.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 500px;
-
+    //background-color: #E0E0E0;
+    //background-size: 20em 500px;
+    background-position: center;
+    @media screen and (max-width: 480px) {
+        background-size: 30em 500px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px){
+        background-size: 40em 500px;
+     }
+     
+     @media screen and (min-width: 769px) and (max-width: 1024px){
+        background-size: 50em 500px;
+     }
+     
+     @media screen and (min-width: 1025px) and (max-width: 1200px){
+        background-size: 60em 500px;
+     }
+     
+     @media screen and (min-width: 1201px){
+        background-size: 60em 500px;
+     }
     .titulos{
         max-width: 50%;
         margin: auto;
